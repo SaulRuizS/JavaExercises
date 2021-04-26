@@ -1,0 +1,40 @@
+/**
+ * 
+ */
+package HelloWorld;
+
+import java.io.IOException;
+
+/**
+ * @author sfrs_
+ *
+ */
+public class HelloWorld {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) throws IOException
+	{
+		// TODO Auto-generated method stub
+		System.out.print("Hello World,\nMy name is Saul Ruiz, and I am starting to learn Java.\n");
+		
+		int a = 0, b = 0, result = 0;
+		
+		System.out.println("Para comezar con este lenguaje a continuacion se ejecutara una simple funcion de suma de dos valores enteros.\nAhora ingrese el primer valor: ");		
+		a = System.in.read();
+		
+		System.out.println("Ingrese otro valor: ");
+		b = System.in.read();
+		
+		result = numbersSum(a, b);
+		System.out.println("El resultado de la suma es: " + result);
+	}
+	
+	private static int numbersSum(int a, int b)
+	{
+		int c = 0;
+		c = a + b;
+		return c;
+	}
+}
